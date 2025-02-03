@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="25dp"
+    android:paddingVertical="35dp"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/background_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/secularone_regular"
+            android:gravity="center"
+            android:text="Create Your\n Account Here!"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/form"
+            android:inputType="text"
+            android:textSize="18dp"
+            android:maxLength="28"
+            android:hint="USERNAME"
+            android:textColor="@color/black"
+            android:fontFamily="@font/secularone_regular"
+            android:padding="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_signup"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/form"
+            android:inputType="text"
+            android:textSize="18dp"
+            android:hint="EMAIL"
+            android:textColor="@color/black"
+            android:fontFamily="@font/secularone_regular"
+            android:padding="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_signup"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/form"
+            android:inputType="textPassword"
+            android:textSize="18dp"
+            android:hint="PASSWORD"
+            android:textColor="@color/black"
+            android:fontFamily="@font/secularone_regular"
+            android:padding="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirm_password"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/form"
+            android:inputType="textPassword"
+            android:textSize="18dp"
+            android:hint="CONFIRM PASSWORD"
+            android:textColor="@color/black"
+            android:fontFamily="@font/secularone_regular"
+            android:padding="15dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_signup"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/startbackground"
+            android:fontFamily="@font/secularone_regular"
+            android:text="Sign Up"
+            android:textSize="30dp"/>
+    </LinearLayout>
+</ScrollView>

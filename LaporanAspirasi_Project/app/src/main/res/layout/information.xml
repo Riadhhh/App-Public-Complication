@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="25dp"
+    android:paddingVertical="35dp"
+    tools:context=".InformationActivity"
+    android:background="@drawable/background_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Application Information"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:fontFamily="@font/secularone_regular"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/secularone_regular"
+            android:text="The Community Criminal Aspiration and Complaint Report application empowers the public to report aspirations, concerns and criminal acts quickly, safely and efficiently."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/secularone_regular"
+            android:text="Objective This Application:\n
+-Enables the public to express aspirations and complaints ;\n
+-Provide a trusted channel for reporting crimes ;\n
+-Makes it easy to respond to reports quickly and effectively ;\n
+-Encourage transparency and accountability in solving public problems."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+</ScrollView>

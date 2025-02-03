@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="25dp"
+    android:paddingVertical="35dp"
+    tools:context=".ReportActivity"
+    android:background="@drawable/background_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/secularone_regular"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="REPORT"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50dp" />
+
+        <!-- Full Name Field -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fullname"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/form"
+            android:inputType="text"
+            android:hint="FULL NAME"
+            android:textColor="@color/black"
+            android:fontFamily="@font/secularone_regular"
+            android:padding="15dp"/>
+
+        <!-- Suspect Field -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/suspect"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/form"
+            android:inputType="text"
+            android:hint="SUSPECT"
+            android:textColor="@color/black"
+            android:fontFamily="@font/secularone_regular"
+            android:padding="15dp"/>
+
+        <!-- Location Field -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/location"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/startbackground"
+            android:textSize="25dp"
+            android:hint="LOCATION"
+            android:textColor="@color/black"
+            android:fontFamily="@font/secularone_regular" />
+
+        <!-- Select Image Button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_select_image"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/startbackground"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/secularone_regular"
+            android:text="Select Image"
+            android:textSize="30dp"/>
+        <!-- Image Preview -->
+        <ImageView
+            android:id="@+id/image_preview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/form"
+            android:contentDescription="Selected Image Preview" />
+
+        <!-- Report Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/secularone_regular"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="TYPE YOUR REPORT HERE !"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <!-- Report Field -->
+        <EditText
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/report"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/form"
+            android:inputType="text"
+            android:hint="THE REPORT"
+            android:textColor="@color/black"
+            android:fontFamily="@font/secularone_regular"
+            android:paddingVertical="50dp"
+            android:paddingLeft="20dp" />
+
+        <!-- Send Button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_send"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/startbackground"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/secularone_regular"
+            android:text="Send"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

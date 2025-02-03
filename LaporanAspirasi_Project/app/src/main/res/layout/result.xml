@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:background="@drawable/background_activity">
+
+    <!-- LinearLayout untuk tombol Home -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/btn_home"
+            android:scaleType="centerCrop"
+            android:background="@null"
+            android:layout_gravity="start"
+            android:contentDescription="Home Button" />
+    </LinearLayout>
+
+    <!-- Konten utama -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="35dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/secularone_regular"
+            android:text="Thank You For\nYour Report"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="45dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/thankreport" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/secularone_regular"
+            android:text="We will immediately\nprocess your report"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/secularone_regular"
+            android:text="Please Wait"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="47dp" />
+    </LinearLayout>
+
+</RelativeLayout>
